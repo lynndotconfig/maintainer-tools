@@ -24,3 +24,18 @@ x.y.z版本编号根据的语义为breaking.feature.fix (断点.特性.修复)
     - x 在数据模型或者视图有重大改变时,数字增加.这种情况下可能需要做数据转移,或者依赖它的模块可能被影响.
     - y 在添加非突破性的新特性被添加时,数字增加.这种情况下将需要进行模块更新
     - z 在bug修复后,数字增加.这种情况下,通常需要重启服务器来确保修复的可用性.
+
+如果版本编号发生变动,安装实移植的使用说明或者脚本应该被包含在重大改变中.
+
+
+目录
+
+模块由以下的几个目录组成:
+    - controllers/: 包含控制器(http路由)
+    - data/: data xml
+    - demo:/ demo xml
+    - models/: model 定义
+    - report/: reproting models(BI/analysis), Webkit/RML 打印报表模板
+    - static:/ 包含web资源,划分为 css/, js/, img/, lib/....
+    - views/: 包含视图,模板和Qweb报表打印模板
+    - wizards/: 向导的模型和视图
